@@ -1,0 +1,37 @@
+POST http://localhost:8080/applications
+Content-Type: application/json
+
+{
+  "company": "Simens",
+  "position": "Software Development intern",
+  "applicationDate": "2026-09-17",
+  "status": "APPLIED",
+  "note": "Applied online"
+}
+
+###
+
+GET http://localhost:8080/applications
+
+###
+
+PUT http://localhost:8080/applications/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "company": "SAP",
+  "position": "Backend Developer Intern",
+  "applicationDate": "2026-09-01",
+  "status": "INTERVIEW",
+  "note": "Interview scheduled"
+}
+
+###
+DELETE http://localhost:8080/applications/2
+
+###
+GET http://localhost:8080/applications/999
+
+###
+GET http://localhost:8080/applications/status/APPLIED

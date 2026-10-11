@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: applicationtracker
+  
+  h2:
+    console:
+      enabled: true
